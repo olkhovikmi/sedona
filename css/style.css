@@ -1,0 +1,73 @@
+/* Подключение шрифтов */
+@font-face {
+	font-family: "PTSans";
+	src: url("/fonts/ptsans.woff2") format("woff2"),
+		url("/fonts/ptsans.woff") format("woff");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "PTSans";
+	src: url("/fonts/ptsansbold.woff2") format("woff2"),
+		url("/fonts/ptsansbold.woff") format("woff");
+	font-weight: 700;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans";
+	font-size: 14px;
+	font-weight: 400;
+	color: #000000;
+	background-color: #f2f2f2;
+}
+
+.wrap {
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+/******************* HEADER *******************/
+
+.top-menu {
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	right: 44%;
+}
+
+.link-menu {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "PT Sans";
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.left-logo {
+	margin-right: 240px;
+}
+
+.link-menu li {
+	width: 20%;
+	text-align: center;
+}
+
+.link-menu li a {
+	display: inline-block;
+	padding: 22px 0;
+	color: #000000;
+	text-decoration: none;	
+}
