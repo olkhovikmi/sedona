@@ -184,7 +184,7 @@ body {
 
 	.true-city p {
 	margin: 0;
-		color: #d4e5f0;
+	color: #d4e5f0;
 }
 
 .image-city {
@@ -274,4 +274,267 @@ body {
 	line-height: 21px;
 	text-transform: uppercase;
 }
+/******************* DEVIL BRIDGE *******************/
+.container-bridge {	
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.devil-bridge {
+	width: 33%;
+	padding: 46px 45px 60px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: #81b3d2;
+	box-sizing: border-box;
+	color: #ffffff;
+}
+
+.devil-bridge h2 {
+	margin: 0;
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.two {
+	position: relative;
+	display: block;
+	margin: 25px 0 30px;
+	color: #d4e5f0;	
+}
+
+.two::before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: 7px;
+	left: 125px;
+	width: 10px;
+	height: 2px;
+	background-color:#d4e5f0;
+	vertical-align: middle;
+}
+
+.two::after {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: 7px;
+	right: 125px;
+	width: 10px;
+	height: 2px;
+	background-color:#d4e5f0;
+	vertical-align: middle;
+}
+
+.devil-bridge p {
+	margin: 0;
+	color: #d4e5f0;
+}
+
+.image-bridge {
+	width: 66%;
+	padding-bottom: 257px;	
+	flex-grow: 1;
+	background-image: url("/img/Layer_5.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;	
+}
+
+/******************* DIGNITY *******************/
+.container-dignity {	
+	display: flex;	
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-color: #eeeeee;
+	list-style: none;
+}
+.dignity-sedona {
+	width: 33%;
+	margin-right: 6px;
+	padding: 46px 70px 60px;
+	text-align: center;
+	text-transform: uppercase;	
+	box-sizing: border-box;
+	color: #000000;
+}
+
+.dignity-sedona h2 {
+	margin: 0;
+	font-size: 21px;
+	font-weight: 700;
+}
+
+.dignity-sedona p {
+	margin: 0;
+	color: #333333;
+}
+
+.number {
+	position: relative;
+	display: block;
+	margin: 25px 0 30px;
+	color: #333333;	
+}
+
+.number::before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: 7px;
+	left: 100px;
+	width: 10px;
+	height: 2px;
+	background-color:#333333;
+	vertical-align: middle;
+}
+
+.number::after {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: 7px;
+	right: 100px;
+	width: 10px;
+	height: 2px;
+	background-color:#333333;
+	vertical-align: middle;
+}
+
+/******************* SEARCH *******************/
+.container-search {
+	padding-top: 57px;
+}
+
+.interested {
+	width: 38%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.interested strong {
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.interested p {
+margin-top: 35px;
+margin-bottom: 0;
+color: #333333;
+text-transform: uppercase;
+line-height: 24px;
+}
+
+.btn-search {
+	display: block;
+	margin: 0 auto;
+	padding: 35px 140px;
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #766357;
+	cursor: pointer;
+}
+
+.btn-search:hover {
+	background-color: #604e43;
+}
+
+.btn-search:active {	
+	background-color: #503e33;
+}
+
+.btn-search:active span {
+	opacity: 0.3;
+}
+
+
+/******************* FOOTER *******************/
+
+.form {
+	width: 571px;
+	padding: 55px;
+	box-sizing: border-box;
+}
+
+.date {
+	position: relative;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.date span {
+	display: inline-block;	
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.checkin {
+	margin-right: 20px;
+}
+
+.checkout {
+	margin-right: 17px;
+}
+
+.date input {
+	width: 346px;
+	padding: 14px 0 14px 13px;		
+	font-weight: 700;	
+	text-transform: uppercase;
+	background-color: #f2f2f2;
+	border: none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.date input:hover {
+	background-color: #ebebeb;
+}
+
+.date input:focus {	
+	border: 2px solid #e5e5e5;
+	background-color: #ffffff;	
+	outline: none;
+}
+
+.date input::placeholder {
+	color: #000000;
+}
+
+.date button {	
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	padding: 0;	
+	opacity: 0.2;
+	border: none;
+	cursor: pointer;
+	outline: none;	
+}
+
+.date button:hover {
+	opacity: 1;
+}
+
+.date button:active {
+	opacity: 0.4;
+}
+
+
+
 
