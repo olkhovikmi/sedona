@@ -507,16 +507,16 @@ line-height: 24px;
 }
 
 .date input:focus {	
-	border: 2px solid #e5e5e5;
+	outline: 2px solid #e5e5e5;
 	background-color: #ffffff;	
-	outline: none;
+	
 }
 
 .date input::placeholder {
 	color: #000000;
 }
 
-.date button {	
+.btn-calendar {	
 	position: absolute;
 	top: 8px;
 	right: 15px;
@@ -527,11 +527,11 @@ line-height: 24px;
 	outline: none;	
 }
 
-.date button:hover {
+.btn-calendar:hover {
 	opacity: 1;
 }
 
-.date button:active {
+.btn-calendar:active {
 	opacity: 0.4;
 }
 
