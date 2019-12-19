@@ -34,6 +34,13 @@ body {
 img {	
 	max-width: 100%;	
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
 /******************* HEADER *******************/
 
 .top-menu {
@@ -42,6 +49,13 @@ img {
 	background-image: url("/img/background_photo.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 6%;
+}
+
+
+.background-foto {
+	background-image: url("/img/filter_background.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
 }
 
 .welcome {
@@ -60,6 +74,13 @@ img {
 	z-index: 2;
 	top: 0;
 	right: 44%;
+}
+
+.logo-hotels {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 45%;
 }
 
 .link-menu {
@@ -105,6 +126,175 @@ img {
 
 .link-menu .active-info {
 	color: #766357;
+}
+
+.link-menu .active-hotel {
+	color: #766357;
+}
+
+.filter-hotels {
+	padding: 31px 72px;
+}
+
+.filter-hotels form {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.infrastructure {
+	width: 12%;
+	margin: 0;
+	margin-right: 115px;
+	padding: 0;	
+	border: none;
+}
+
+.infrastructure legend {
+	margin-bottom: 31px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
+.item-infra {
+	display: block;
+	margin-bottom: 36px;
+	color: #ffffff;
+	line-height: 21px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.item-infra::before {
+	display: inline-block;
+	content: "";
+	width: 27px;
+	height: 23px;
+	margin-right: 15px;
+	vertical-align: middle;
+	background-image: url("/img/checkbox-off.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+}
+
+#pool:checked ~ .box-infra .pool::before,
+#parking:checked ~ .box-infra .parking::before,
+#wifi:checked ~ .box-infra .wifi::before {
+	display: inline-block;
+	content: "";
+	width: 27px;
+	height: 23px;
+	margin-right: 15px;
+	vertical-align: middle;
+	background-image: url("/img/checkbox-on.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#pool:disabled ~ .box-infra .pool::before,
+#parking:disabled ~ .box-infra .parking::before,
+#wifi:disabled ~ .box-infra .wifi::before {
+	background-image: url("/img/checkbox-off-dis.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#pool:disabled ~ .box-infra .pool,
+#parking:disabled ~ .box-infra .parking,
+#wifi:disabled ~ .box-infra .wifi {
+ color: #6a6a6a;
+}
+
+#pool:checked:disabled ~ .box-infra .pool::before,
+#parking:checked:disabled ~ .box-infra .parking::before,
+#wifi:checked:disabled ~ .box-infra .wifi::before {
+	background-image: url("/img/checkbox-on-dis.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.item-infra:last-child {
+	margin-bottom: 0;
+}
+
+.type {
+	width: 13%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.type legend {
+	margin-bottom: 31px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+
+.item-type {
+	display: block;
+	margin-bottom: 36px;
+	color: #ffffff;
+	line-height: 21px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.item-type::before {
+	display: inline-block;
+	content: "";
+	width: 27px;
+	height: 23px;
+	margin-right: 15px;
+	vertical-align: middle;
+	background-image: url("/img/checkbox-off.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+}
+
+#hotel:checked ~ .box-type .hotel::before,
+#motel:checked ~ .box-type .motel::before,
+#apartments:checked ~ .box-type .apartments::before {
+	display: inline-block;
+	content: "";
+	width: 27px;
+	height: 23px;
+	margin-right: 15px;
+	vertical-align: middle;
+	background-image: url("/img/checkbox-on.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#hotel:disabled ~ .box-type .hotel::before,
+#motel:disabled ~ .box-type .motel::before,
+#apartments:disabled ~ .box-type .apartments::before {
+	background-image: url("/img/checkbox-off-dis.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#hotel:disabled ~ .box-type .hotel,
+#motel:disabled ~ .box-type .motel,
+#apartments:disabled ~ .box-type .apartments {
+ color: #6a6a6a;
+}
+
+#hotel:checked:disabled ~ .box-type .hotel::before,
+#motel:checked:disabled ~ .box-type .motel::before,
+#apartments:checked:disabled ~ .box-type .apartments::before {
+	background-image: url("/img/checkbox-on-dis.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.item-type:last-child {
+	margin-bottom: 0;
 }
 
 /******************* MAIN *******************/

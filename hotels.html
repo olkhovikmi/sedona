@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Sedona</title>
+</head>
+
+<body>
+	<div class="wrap">
+		<header class="background-foto">
+			<nav class="blurry-menu">
+				<div class="logo-hotels"><a href="index.html"><img src="/img/logo.png" alt="Седона"></a></div>
+				<ul class="link-menu">
+					<li><a href="index.html" class="item-info">Информация</a></li>
+					<li class="left-logo"><a href="#" class="item-foto">Фото и видео</a></li>
+					<li><a href="#" class="item-map">Карта штата</a></li>
+					<li><a href="#" class="active-hotel item-hotel">Гостиницы</a></li>
+				</ul>
+			</nav>
+			<div class="filter-hotels">
+				<form action="#">
+					<fieldset class="infrastructure">
+						<legend>Инфраструктура:</legend>
+						<input type="checkbox" class="visually-hidden" id="pool" name="infra" checked>
+						<input type="checkbox" class="visually-hidden" id="parking" name="infra">
+						<input type="checkbox" class="visually-hidden" id="wifi" name="infra" disabled>
+						<div class="box-infra">
+							<label for="pool" class="item-infra pool">Бассейн</label>
+							<label for="parking" class="item-infra parking">Парковка</label>
+							<label for="wifi" class="item-infra wifi">Wi-Fi</label>
+						</div>
+					</fieldset>
+
+					<fieldset class="type">
+						<legend>Тип жилья:</legend>
+						<input type="checkbox" class="visually-hidden" id="hotel" name="house" checked>
+						<input type="checkbox" class="visually-hidden" id="motel" name="house" checked>
+						<input type="checkbox" class="visually-hidden" id="apartments" name="house" checked>
+						<div class="box-type">
+							<label for="hotel" class="item-type hotel">Гостиница</label>
+							<label for="motel" class="item-type motel">Мотель</label>
+							<label for="apartments" class="item-type apartments">Апартаменты</label>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</header>
+	</div>
+
+</body>
+
+</html>
