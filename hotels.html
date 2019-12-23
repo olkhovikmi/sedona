@@ -19,7 +19,7 @@
 					<li><a href="index.html" class="item-info">Информация</a></li>
 					<li class="left-logo"><a href="#" class="item-foto">Фото и видео</a></li>
 					<li><a href="#" class="item-map">Карта штата</a></li>
-					<li><a href="#" class="active-hotel item-hotel">Гостиницы</a></li>
+					<li><a href="#" class="active-hotel ">Гостиницы</a></li>
 				</ul>
 			</nav>
 			<div class="filter-hotels">
@@ -47,9 +47,36 @@
 							<label for="apartments" class="item-type apartments">Апартаменты</label>
 						</div>
 					</fieldset>
+					<div class="filter-range">
+						<div class="filter-range-title">Стоимость в сутки (р):</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+						<button class="btn-transparent" type="submit">Показать</button>
+					</div>
 				</form>
 			</div>
 		</header>
+		<main>
+			<div class="menu-middle">
+				<ul class="menu-filter">
+					<li class="menu-found">Найдено: 3</li>
+					<li class="menu-sorting">Сортировка:</li>
+					<li class="menu-price"><a href="#">По цене</a></li>
+					<li class="menu-type"><a href="#">По типу</a></li>
+					<li class="menu-rating"><a href="#">По рейтингу</a></li>
+					<li class="tri"><a href="#" class="tri-up"></a><a href="#" class="tri-down"></a></li>
+				</ul>
+			</div>
+		</main>
 	</div>
 
 </body>

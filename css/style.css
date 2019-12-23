@@ -51,6 +51,9 @@ img {
 	background-position: 50% 6%;
 }
 
+.blurry-menu {
+	position: relative;
+}
 
 .background-foto {
 	background-image: url("/img/filter_background.jpg");
@@ -73,14 +76,14 @@ img {
 	position: absolute;
 	z-index: 2;
 	top: 0;
-	right: 44%;
+	right: 530px;
 }
 
 .logo-hotels {
 	position: absolute;
 	z-index: 2;
 	top: 0;
-	right: 45%;
+	right: 538px;
 }
 
 .link-menu {
@@ -115,11 +118,12 @@ img {
 	text-decoration: none;	
 }
 
-.link-menu .item-foto:hover,.link-menu .item-map:hover,.link-menu .item-hotel:hover {
+.link-menu .item-foto:hover,.link-menu .item-map:hover,.link-menu .item-hotel:hover, .link-menu .item-info:hover {
 	color: #81b3d2;
 }
 
-.link-menu .item-foto:active,.link-menu .item-map:active,.link-menu .item-hotel:active {
+.link-menu .item-foto:active,.link-menu .item-map:active,.link-menu .item-hotel:active,
+.link-menu .item-info:active {
 	color: #000000;
 	opacity: 0.3;
 }
@@ -223,6 +227,7 @@ img {
 .type {
 	width: 13%;
 	margin: 0;
+	margin-right: 335px;
 	padding: 0;
 	border: none;
 }
@@ -970,5 +975,240 @@ line-height: 24px;
 	opacity: 0.3;
 }
 	
+/******************* FILTE-RANGE *******************/
+.filter-range {
+  width: 330px;  
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/******************* MAIN *******************/
+
+.menu-middle {
+	padding: 30px 72px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-filter {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	color: #000000;
+}
+
+.menu-found {
+	margin-right: 49px;;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.menu-sorting {
+	margin-right: 40px;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.menu-price, .menu-type {
+	margin-right: 33px;
+}
+
+.menu-rating {
+	margin-right: 500px;
+}
+
+.menu-type a:hover,.menu-rating a:hover {
+	color: #81b3d2;
+}
+
+.menu-type a:active,.menu-rating a:active {
+	color: #000000;
+	border-bottom:  none;
+}
+
+.menu-type a, .menu-rating a {
+	display: inline-block;	
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	color: #d0d0d0;	
+	text-decoration: none;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.menu-price a {
+	display: inline-block;	
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #81b3d2;
+	border: none;
+}
 
 
+.tri a  {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.tri-up {
+	width: 0;
+	height: 0;
+	margin-right: 10px;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-bottom: 10px solid #cacaca;
+}
+
+.tri-up:hover {
+	border-bottom: 10px solid#000000;
+}
+
+.tri-up:active {
+	border-bottom: 10px solid#81b3d2;
+}
+
+.tri-down {
+	width: 0;
+	height: 0;
+	border-right: 6px solid transparent;
+	border-left: 6px solid transparent;
+	border-top: 10px solid #81b3d2;
+}
