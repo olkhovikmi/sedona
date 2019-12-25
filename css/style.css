@@ -76,14 +76,14 @@ img {
 	position: absolute;
 	z-index: 2;
 	top: 0;
-	right: 530px;
+	left: 42%
 }
 
 .logo-hotels {
 	position: absolute;
 	z-index: 2;
 	top: 0;
-	right: 538px;
+	left: 42%
 }
 
 .link-menu {
@@ -1261,6 +1261,14 @@ line-height: 24px;
 	margin-right: 45px;
 }
 
+.items-type .motel {
+	margin-right: 68px;
+}
+
+.items-type .villas {
+	margin-right: 30px;
+}
+
 .items-btn a {
 	display: inline-block;
 	color: #ffffff;
@@ -1305,10 +1313,30 @@ line-height: 24px;
 	width: 11%;
 }
 
-.stars-rating {
+.stars-four {
 	display: block;	
 	width: 72px;
 	margin-left: 44px;
+	padding-bottom: 18px;
+	margin-bottom: 47px;
+	background-image: url("/img/stars.png");	
+	
+}
+
+.stars-three {
+	display: block;	
+	width: 54px;
+	margin-left: 63px;
+	padding-bottom: 18px;
+	margin-bottom: 47px;
+	background-image: url("/img/stars.png");	
+	
+}
+
+.stars-two {
+	display: block;	
+	width: 35px;
+	margin-left: 81px;
 	padding-bottom: 18px;
 	margin-bottom: 47px;
 	background-image: url("/img/stars.png");	
