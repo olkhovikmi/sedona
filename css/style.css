@@ -1,15 +1,15 @@
 /* Подключение шрифтов */
 @font-face {
 	font-family: "PTSans";
-	src: url("/fonts/ptsans.woff2") format("woff2"),
-		url("/fonts/ptsans.woff") format("woff");
+	src: url("../fonts/ptsans.woff2") format("woff2"),
+		url("../fonts/ptsans.woff") format("woff");
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: "PTSans";
-	src: url("/fonts/ptsansbold.woff2") format("woff2"),
-		url("/fonts/ptsansbold.woff") format("woff");
+	src: url("../fonts/ptsansbold.woff2") format("woff2"),
+		url("../fonts/ptsansbold.woff") format("woff");
 	font-weight: 700;
 }
 
@@ -46,7 +46,7 @@ img {
 .top-menu {
 	position: relative;
 	padding-bottom: 508px;
-	background-image: url("/img/background_photo.jpg");
+	background-image: url("../img/background_photo.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 6%;
 }
@@ -56,7 +56,7 @@ img {
 }
 
 .background-foto {
-	background-image: url("/img/filter_background.jpg");
+	background-image: url("../img/filter_background.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -179,7 +179,7 @@ img {
 	height: 23px;
 	margin-right: 15px;
 	vertical-align: middle;
-	background-image: url("/img/checkbox-off.png");
+	background-image: url("../img/checkbox-off.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;	
 }
@@ -193,7 +193,7 @@ img {
 	height: 23px;
 	margin-right: 15px;
 	vertical-align: middle;
-	background-image: url("/img/checkbox-on.png");
+	background-image: url("../img/checkbox-on.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -201,7 +201,7 @@ img {
 #pool:disabled ~ .box-infra .pool::before,
 #parking:disabled ~ .box-infra .parking::before,
 #wifi:disabled ~ .box-infra .wifi::before {
-	background-image: url("/img/checkbox-off-dis.png");
+	background-image: url("../img/checkbox-off-dis.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -215,7 +215,7 @@ img {
 #pool:checked:disabled ~ .box-infra .pool::before,
 #parking:checked:disabled ~ .box-infra .parking::before,
 #wifi:checked:disabled ~ .box-infra .wifi::before {
-	background-image: url("/img/checkbox-on-dis.png");
+	background-image: url("../img/checkbox-on-dis.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -257,7 +257,7 @@ img {
 	height: 23px;
 	margin-right: 15px;
 	vertical-align: middle;
-	background-image: url("/img/checkbox-off.png");
+	background-image: url("../img/checkbox-off.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;	
 }
@@ -271,7 +271,7 @@ img {
 	height: 23px;
 	margin-right: 15px;
 	vertical-align: middle;
-	background-image: url("/img/checkbox-on.png");
+	background-image: url("../img/checkbox-on.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -279,7 +279,7 @@ img {
 #hotel:disabled ~ .box-type .hotel::before,
 #motel:disabled ~ .box-type .motel::before,
 #apartments:disabled ~ .box-type .apartments::before {
-	background-image: url("/img/checkbox-off-dis.png");
+	background-image: url("../img/checkbox-off-dis.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -293,7 +293,7 @@ img {
 #hotel:checked:disabled ~ .box-type .hotel::before,
 #motel:checked:disabled ~ .box-type .motel::before,
 #apartments:checked:disabled ~ .box-type .apartments::before {
-	background-image: url("/img/checkbox-on-dis.png");
+	background-image: url("../img/checkbox-on-dis.png");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
@@ -390,7 +390,7 @@ img {
 	width: 66%;
 	padding-bottom: 257px;	
 	flex-grow: 1;
-	background-image: url("/img/Layer_10.jpg");
+	background-image: url("../img/Layer_10.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;	
@@ -539,7 +539,7 @@ img {
 	width: 66%;
 	padding-bottom: 257px;	
 	flex-grow: 1;
-	background-image: url("/img/Layer_5.jpg");
+	background-image: url("../img/Layer_5.jpg");
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;	
@@ -1319,7 +1319,7 @@ line-height: 24px;
 	margin-left: 44px;
 	padding-bottom: 18px;
 	margin-bottom: 47px;
-	background-image: url("/img/stars.png");	
+	background-image: url("../img/stars.png");	
 	
 }
 
@@ -1339,7 +1339,7 @@ line-height: 24px;
 	margin-left: 81px;
 	padding-bottom: 18px;
 	margin-bottom: 47px;
-	background-image: url("/img/stars.png");	
+	background-image: url("../img/stars.png");	
 	
 }
 
